@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | AeroLog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-600 antialiased selection:bg-slate-200 selection:text-slate-900">
+
+    <!-- Navigation / Header -->
+    <nav class="max-w-3xl mx-auto px-6 py-8 flex justify-between items-center">
+        <a href="index.html" class="text-sm font-medium text-slate-400 hover:text-slate-900 transition-colors flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Back to EduAlexxis
+        </a>
+        <span class="text-xs font-mono text-slate-400 border border-slate-200 px-2 py-1 rounded">v1.0</span>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="max-w-3xl mx-auto px-6 pb-12 pt-4 text-center">
+        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-slate-900 text-white mb-6 shadow-xl shadow-slate-200">
+            <i class="fa-solid fa-plane-up text-2xl"></i>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-4">Privacy Policy for AeroLog</h1>
+        <p class="text-slate-500">Last Updated: <span class="font-medium text-slate-700">December 3, 2025</span></p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-6 pb-24">
+        
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 sm:p-12 space-y-12">
+
+            <!-- 1. Introduction -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 text-slate-500 text-xs">1</span>
+                    Introduction
+                </h2>
+                <p class="leading-relaxed">
+                    <strong>AeroLog</strong> ("we," "our," or "the App") is a digital maintenance logbook application developed by <strong>Eduardo Flamenco</strong>. We respect your privacy and are committed to protecting the data you generate while using our application.
+                </p>
+                <p class="mt-4 leading-relaxed">
+                    This Privacy Policy explains how your data is handled, stored, and processed. By using AeroLog, you agree to the practices described in this policy.
+                </p>
+            </section>
+
+            <!-- 2. Data Collection -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 text-slate-500 text-xs">2</span>
+                    Data Collection and Storage
+                </h2>
+                
+                <!-- Highlight Box -->
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg mb-6">
+                    <h3 class="text-blue-900 font-semibold text-sm uppercase tracking-wide mb-1">No Developer Access to Data</h3>
+                    <p class="text-blue-800 text-sm leading-relaxed">
+                        We utilize a "zero-knowledge" architecture. We do not collect, store, or transmit your personal data, inventory logs, or photos to our own servers. The developer (Eduardo Flamenco) has no way to access, view, or mine the data you enter into the App.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-semibold text-slate-900 mb-2">iCloud and CloudKit</h3>
+                        <p class="leading-relaxed mb-3">AeroLog uses Apple's <strong>CloudKit</strong> service to synchronize your data across your devices.</p>
+                        <ul class="list-disc pl-5 space-y-2 marker:text-slate-300">
+                            <li><strong>Private Database:</strong> All inventory data, part numbers, locations, and images are stored in a private iCloud container (<code>iCloud.com.EduAlexxiss.AeroLog</code>) associated with your personal Apple ID.</li>
+                            <li><strong>Control:</strong> This data is encrypted by Apple and is only accessible by you on devices signed in to your iCloud account. We cannot view or decrypt this data.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-slate-900 mb-2">Local Storage</h3>
+                        <p class="leading-relaxed">
+                            If you do not have iCloud enabled, all data is stored locally on your device's internal storage using the <strong>SwiftData</strong> framework.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Camera Usage -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 text-slate-500 text-xs">3</span>
+                    Camera Usage and Image Processing
+                </h2>
+                <p class="mb-4">AeroLog requests access to your device's camera for two specific purposes:</p>
+                <ul class="list-disc pl-5 space-y-2 mb-6 marker:text-slate-300">
+                    <li><strong>Intelligent Scanner:</strong> To scan part tags and extract text (Part Numbers) using Optical Character Recognition (OCR).</li>
+                    <li><strong>Visual Evidence:</strong> To capture photos of parts and tags for your maintenance records.</li>
+                </ul>
+
+                <h3 class="font-semibold text-slate-900 mb-2">On-Device Processing</h3>
+                <ul class="list-disc pl-5 space-y-2 marker:text-slate-300">
+                    <li><strong>OCR Scanning:</strong> All text recognition is performed locally on your device using Apple's <strong>Vision</strong> framework. Video frames from the scanner are processed in real-time memory and are never uploaded to any external server.</li>
+                    <li><strong>Photo Storage:</strong> Photos you choose to save are stored in your local database or your private iCloud container. They are never shared with third parties or the developer.</li>
+                </ul>
+            </section>
+
+            <!-- 4. Analytics -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 text-slate-500 text-xs">4</span>
+                    Analytics and Tracking
+                </h2>
+                <p class="mb-4">AeroLog is a professional utility tool designed for privacy.</p>
+                <ul class="list-disc pl-5 space-y-2 marker:text-slate-300">
+                    <li><strong>No Third-Party Analytics:</strong> We do not use third-party analytics services (such as Google Analytics, Firebase, or Mixpanel) to track user behavior.</li>
+                    <li><strong>No Advertising:</strong> The App does not display advertisements and does not share data with advertising networks.</li>
+                </ul>
+            </section>
+
+            <!-- 5. Data Retention -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 text-slate-500 text-xs">5</span>
+                    Data Retention
+                </h2>
+                <p class="mb-4">Because your data is stored in your personal iCloud account or local device storage, you retain full control over its retention.</p>
+                <ul class="list-disc pl-5 space-y-2 marker:text-slate-300">
+                    <li><strong>Deletion:</strong> If you delete a part entry within the App, it is removed from your local database and your iCloud Private Database immediately.</li>
+                    <li><strong>App Deletion:</strong> If you delete the AeroLog app, local data is removed. Data synced to iCloud may remain in your iCloud storage until you manually delete the app data via your iOS Settings (Settings > Apple ID > iCloud > Manage Account Storage).</li>
+                </ul>
+            </section>
+
+            <!-- 6. Children's Privacy -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 text-slate-500 text-xs">6</span>
+                    Children’s Privacy
+                </h2>
+                <p class="leading-relaxed">
+                    AeroLog does not knowingly collect or solicit personal information from children under the age of 13. Given the professional nature of the application (aviation maintenance), it is not targeted towards children.
+                </p>
+            </section>
+
+            <!-- 7. Security -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 text-slate-500 text-xs">7</span>
+                    Security
+                </h2>
+                <p class="leading-relaxed">
+                    We rely on the industry-standard security features provided by Apple's iOS ecosystem. Your data is protected by the same security measures that protect your iCloud Photos and Drive documents.
+                </p>
+            </section>
+
+            <!-- 8. Changes -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 text-slate-500 text-xs">8</span>
+                    Changes to This Policy
+                </h2>
+                <p class="leading-relaxed">
+                    We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
+                </p>
+            </section>
+
+            <!-- 9. Contact -->
+            <section class="border-t border-slate-100 pt-8 mt-12">
+                <h2 class="text-xl font-bold text-slate-900 mb-6">Contact Us</h2>
+                <div class="bg-slate-50 rounded-lg p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div>
+                        <p class="font-semibold text-slate-900">Eduardo Flamenco</p>
+                        <p class="text-sm">Developer</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://github.com/EduAlexxis" target="_blank" class="inline-flex items-center justify-center px-4 py-2 border border-slate-300 shadow-sm text-sm font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50 focus:outline-none transition-colors">
+                            <i class="fa-brands fa-github mr-2"></i> GitHub Issue
+                        </a>
+                        <a href="#" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-slate-900 hover:bg-slate-800 focus:outline-none transition-colors">
+                            App Store Support
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center pb-12">
+        <p class="text-slate-400 text-sm">&copy; 2025 Eduardo Flamenco. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
