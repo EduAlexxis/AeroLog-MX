@@ -8,12 +8,6 @@ AeroLog
 <strong>The Intelligent, Privacy-First Digital Maintenance Logbook.</strong>
 </p>
 
-<p align="center">
-<a href="https://developer.apple.com/swift/"><img src="https://www.google.com/search?q=https://img.shields.io/badge/Language-Swift-orange.svg" alt="Swift"></a>
-<a href="https://developer.apple.com/ios/"><img src="https://www.google.com/search?q=https://img.shields.io/badge/Platform-iOS-lightgrey.svg" alt="iOS"></a>
-<a href="https://www.google.com/search?q=https://edualexxis.github.io/AeroLog-MX/privacy_aerolog.html"><img src="https://www.google.com/search?q=https://img.shields.io/badge/Privacy-Zero--Knowledge-green.svg" alt="Privacy"></a>
-</p>
-
 ✈️ About AeroLog
 
 AeroLog is a modern utility application designed for aviation maintenance professionals. It streamlines the process of logging inventory, tracking parts, and documenting maintenance actions.
