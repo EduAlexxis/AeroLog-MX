@@ -8,10 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        html { scroll-behavior: smooth; }
-    </style>
+    <style> body { font-family: 'Inter', sans-serif; } html { scroll-behavior: smooth; } </style>
 </head>
 <body class="bg-slate-50 text-slate-600 antialiased selection:bg-slate-200 selection:text-slate-900 flex flex-col min-h-screen">
 
@@ -29,9 +26,16 @@
                 <a href="index.html" class="text-orange-600 font-semibold bg-orange-50 px-3 py-1 rounded-full">Legal</a>
             </div>
 
-            <a href="home.html" class="md:hidden text-slate-500 hover:text-slate-900">
-                <i class="fa-solid fa-house"></i>
-            </a>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-500 hover:text-slate-900 p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4 shadow-xl absolute w-full top-16 left-0">
+            <a href="home.html" class="block text-slate-500 font-medium hover:text-orange-600">Home</a>
+            <a href="changelog.html" class="block text-slate-500 font-medium hover:text-orange-600">Changelogs</a>
+            <a href="support.html" class="block text-slate-500 font-medium hover:text-orange-600">Support</a>
+            <a href="index.html" class="block text-orange-600 font-bold bg-orange-50 px-4 py-2 rounded-lg">Legal</a>
         </div>
     </nav>
 
@@ -48,14 +52,10 @@
                     <h2 class="text-2xl font-bold text-slate-900">Part I: Privacy Policy</h2>
                     <p class="text-slate-500 mt-2">How we handle your data and protect your privacy.</p>
                 </div>
-
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">1. Introduction</h3>
-                    <p class="leading-relaxed">
-                        <strong>AeroLog</strong> ("we," "our," or "the App") is a digital maintenance logbook application developed by <strong>Eduardo Flamenco</strong>. We utilize a "zero-knowledge" architecture: we do not collect, store, or mine your personal data on our own servers.
-                    </p>
+                    <p class="leading-relaxed"><strong>AeroLog</strong> ("we," "our," or "the App") is a digital maintenance logbook application developed by <strong>Eduardo Flamenco</strong>. We utilize a "zero-knowledge" architecture: we do not collect, store, or mine your personal data on our own servers.</p>
                 </section>
-
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">2. Data Storage & iCloud</h3>
                     <p class="leading-relaxed mb-4">AeroLog stores data in two places:</p>
@@ -64,19 +64,13 @@
                         <li><strong>Private iCloud:</strong> If enabled, data syncs to your personal iCloud container (<code>iCloud.com.EduAlexxiss.AeroLog</code>). This data is encrypted by Apple and accessible only by you. We have no access to it.</li>
                     </ul>
                 </section>
-
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">3. Camera Usage</h3>
-                    <p class="leading-relaxed">
-                        We use the camera for the <strong>Intelligent Scanner</strong> (OCR) and for attaching photos to parts. All image processing happens locally on your device. No video or images are sent to external servers for analysis.
-                    </p>
+                    <p class="leading-relaxed">We use the camera for the <strong>Intelligent Scanner</strong> (OCR) and for attaching photos to parts. All image processing happens locally on your device. No video or images are sent to external servers for analysis.</p>
                 </section>
-
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">4. Analytics & Tracking</h3>
-                    <p class="leading-relaxed">
-                        We do not use third-party analytics (like Google Analytics) and we do not display ads.
-                    </p>
+                    <p class="leading-relaxed">We do not use third-party analytics (like Google Analytics) and we do not display ads.</p>
                 </section>
             </div>
 
@@ -85,52 +79,30 @@
                     <h2 class="text-2xl font-bold text-slate-900">Part II: Terms of Use</h2>
                     <p class="text-slate-500 mt-2">The rules and agreements for using AeroLog.</p>
                 </div>
-
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">1. Agreement to Terms</h3>
-                    <p class="leading-relaxed">
-                        By downloading or using AeroLog, you agree to these Terms. If you do not agree, you may not use the App.
-                    </p>
+                    <p class="leading-relaxed">By downloading or using AeroLog, you agree to these Terms. If you do not agree, you may not use the App.</p>
                 </section>
-
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">2. Use License</h3>
-                    <p class="leading-relaxed mb-3">
-                        We grant you a personal, non-exclusive, non-transferable license to use AeroLog for your personal or professional maintenance logging purposes.
-                    </p>
-                    <p class="leading-relaxed text-sm text-slate-500">
-                        You may not reverse engineer, decompile, or attempt to extract the source code of the App.
-                    </p>
+                    <p class="leading-relaxed mb-3">We grant you a personal, non-exclusive, non-transferable license to use AeroLog for your personal or professional maintenance logging purposes.</p>
+                    <p class="leading-relaxed text-sm text-slate-500">You may not reverse engineer, decompile, or attempt to extract the source code of the App.</p>
                 </section>
-
                 <section class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-lg">
                     <h3 class="text-amber-900 font-bold text-sm uppercase tracking-wide mb-2">3. Important Aviation Disclaimer</h3>
-                    <p class="text-amber-800 text-sm leading-relaxed">
-                        <strong>AeroLog is a supplementary utility tool.</strong> Unless explicitly certified by your local aviation authority (e.g., FAA, EASA), this App does <strong>not</strong> replace official, legal maintenance logs or airworthiness records. 
-                        <br><br>
-                        You are solely responsible for ensuring that your maintenance records comply with all applicable regulations. The Developer assumes no liability for the accuracy or legal validity of the data you maintain within the App.
-                    </p>
+                    <p class="text-amber-800 text-sm leading-relaxed"><strong>AeroLog is a supplementary utility tool.</strong> Unless explicitly certified by your local aviation authority (e.g., FAA, EASA), this App does <strong>not</strong> replace official, legal maintenance logs or airworthiness records.<br><br>You are solely responsible for ensuring that your maintenance records comply with all applicable regulations. The Developer assumes no liability for the accuracy or legal validity of the data you maintain within the App.</p>
                 </section>
-
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">4. Disclaimer of Warranties</h3>
-                    <p class="leading-relaxed">
-                        The App is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties, expressed or implied, regarding the reliability, stability, or availability of the App or the iCloud synchronization service.
-                    </p>
+                    <p class="leading-relaxed">The App is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties, expressed or implied, regarding the reliability, stability, or availability of the App or the iCloud synchronization service.</p>
                 </section>
-
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">5. Limitation of Liability</h3>
-                    <p class="leading-relaxed">
-                        In no event shall the Developer be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the App, even if we have been notified of the possibility of such damage.
-                    </p>
+                    <p class="leading-relaxed">In no event shall the Developer be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the App, even if we have been notified of the possibility of such damage.</p>
                 </section>
-                
                  <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">6. Governing Law</h3>
-                    <p class="leading-relaxed">
-                        These terms shall be governed by and construed in accordance with the laws of the United States.
-                    </p>
+                    <p class="leading-relaxed">These terms shall be governed by and construed in accordance with the laws of the United States.</p>
                 </section>
             </div>
         </div>
@@ -140,5 +112,12 @@
         <p class="text-slate-400 text-sm">&copy; 2025 Eduardo Flamenco. All rights reserved.</p>
     </footer>
 
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
