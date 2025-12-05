@@ -13,6 +13,16 @@
     <img src="https://img.shields.io/badge/License-Proprietary-red" alt="License">
 </p>
 
+<p>
+    <a href="#">
+        <img src="https://img.shields.io/badge/Download_on_the-App_Store-black?style=for-the-badge&logo=apple&logoColor=white" alt="Download on App Store">
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://testflight.apple.com/join/YOUR_LINK_HERE">
+        <img src="https://img.shields.io/badge/Join_Beta-TestFlight-0064FA?style=for-the-badge&logo=testflight&logoColor=white" alt="Join TestFlight Beta">
+    </a>
+</p>
+
 [Report Bug](https://github.com/EduAlexxis/AeroLog-MX/issues) · [Request Feature](https://github.com/EduAlexxis/AeroLog-MX/issues) · [Privacy Policy](https://edualexxis.github.io/AeroLog-MX/)
 
 </div>
