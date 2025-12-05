@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AeroLog</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-600 antialiased flex flex-col min-h-screen">
+
+    <nav class="w-full bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="home.html" class="flex items-center gap-3 group">
+                <img src="icon.png" alt="Logo" class="w-8 h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform">
+                <span class="font-bold text-slate-900 tracking-tight text-lg">AeroLog</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-500">
+                <a href="home.html" class="text-orange-600 font-semibold bg-orange-50 px-3 py-1 rounded-full">Home</a>
+                <a href="changelog.html" class="hover:text-slate-900 transition-colors">Changelogs</a>
+                <a href="support.html" class="hover:text-slate-900 transition-colors">Support</a>
+                <a href="index.html" class="hover:text-slate-900 transition-colors">Legal</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <section class="max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-8 border border-blue-100">
+                <span class="w-2 h-2 rounded-full bg-blue-500"></span> v1.0 Available Now
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
+                The Intelligent Logbook for <br class="hidden sm:block"> <span class="text-orange-500">Aviation Professionals</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Seamlessly scan parts, sync across devices, and maintain audit-ready logs with a tool built for the hangar floor.
+            </p>
+            <div class="flex justify-center gap-4">
+                <button class="bg-slate-900 text-white px-8 py-3 rounded-xl font-semibold hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200">
+                    <i class="fa-brands fa-apple mr-2"></i> Download on App Store
+                </button>
+            </div>
+        </section>
+
+        <section class="bg-white border-y border-slate-100 py-24">
+            <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600">
+                        <i class="fa-solid fa-expand text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Smart Scanner</h3>
+                    <p class="text-slate-500 leading-relaxed">Instantly capture Part Numbers using on-device OCR. Just point your camera at the tag.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
+                        <i class="fa-solid fa-cloud-arrow-up text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">iCloud Sync</h3>
+                    <p class="text-slate-500 leading-relaxed">Your data lives on your devices. Syncs seamlessly between iPhone and iPad via your private iCloud.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600">
+                        <i class="fa-solid fa-camera text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Visual Evidence</h3>
+                    <p class="text-slate-500 leading-relaxed">Attach photos of parts and tags directly to your log entries for complete accountability.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 bg-slate-50 border-t border-slate-200">
+        <p class="text-slate-400 text-sm">&copy; 2025 Eduardo Flamenco. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
