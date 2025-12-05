@@ -24,6 +24,15 @@
                 <a href="support.html" class="hover:text-slate-900 transition-colors">Support</a>
                 <a href="index.html" class="hover:text-slate-900 transition-colors">Legal</a>
             </div>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-500 hover:text-slate-900 p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4 shadow-xl absolute w-full top-16 left-0">
+            <a href="home.html" class="block text-slate-500 font-medium hover:text-orange-600">Home</a>
+            <a href="changelog.html" class="block text-orange-600 font-bold bg-orange-50 px-4 py-2 rounded-lg">Changelogs</a>
+            <a href="support.html" class="block text-slate-500 font-medium hover:text-orange-600">Support</a>
+            <a href="index.html" class="block text-slate-500 font-medium hover:text-orange-600">Legal</a>
         </div>
     </nav>
 
@@ -40,7 +49,6 @@
                 </div>
                 <time class="text-sm text-slate-400 font-mono">December 5, 2025</time>
             </div>
-            
             <div class="prose prose-slate prose-sm text-slate-600">
                 <p>Welcome to AeroLog! The first version includes everything you need to start digitizing your maintenance logs.</p>
                 <ul class="list-disc pl-4 space-y-1 mt-3">
@@ -57,5 +65,10 @@
         <p class="text-slate-400 text-sm">&copy; 2025 Eduardo Flamenco. All rights reserved.</p>
     </footer>
 
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
 </body>
 </html>
