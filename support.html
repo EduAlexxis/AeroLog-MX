@@ -24,6 +24,15 @@
                 <a href="support.html" class="text-orange-600 font-semibold bg-orange-50 px-3 py-1 rounded-full">Support</a>
                 <a href="index.html" class="hover:text-slate-900 transition-colors">Legal</a>
             </div>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-500 hover:text-slate-900 p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4 shadow-xl absolute w-full top-16 left-0">
+            <a href="home.html" class="block text-slate-500 font-medium hover:text-orange-600">Home</a>
+            <a href="changelog.html" class="block text-slate-500 font-medium hover:text-orange-600">Changelogs</a>
+            <a href="support.html" class="block text-orange-600 font-bold bg-orange-50 px-4 py-2 rounded-lg">Support</a>
+            <a href="index.html" class="block text-slate-500 font-medium hover:text-orange-600">Legal</a>
         </div>
     </nav>
 
@@ -55,12 +64,10 @@
 
         <div class="space-y-6">
             <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-4">Frequently Asked Questions</h2>
-            
             <div class="space-y-2">
                 <h3 class="font-semibold text-slate-900">Is my data secure?</h3>
                 <p class="text-slate-500 text-sm leading-relaxed">Yes. All data is stored locally on your device or in your personal private iCloud. The developer cannot access your data.</p>
             </div>
-            
             <div class="space-y-2">
                 <h3 class="font-semibold text-slate-900">Does it work offline?</h3>
                 <p class="text-slate-500 text-sm leading-relaxed">Absolutely. You can log parts and take photos without internet. Data will sync to iCloud automatically once you are back online.</p>
@@ -72,5 +79,10 @@
         <p class="text-slate-400 text-sm">&copy; 2025 Eduardo Flamenco. All rights reserved.</p>
     </footer>
 
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
 </body>
 </html>
