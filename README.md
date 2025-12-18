@@ -7,19 +7,19 @@
 **The Intelligent, Privacy-First Digital Maintenance Logbook.**
 
 <p>
-    <img src="https://img.shields.io/badge/Platform-iOS%20%7C%20iPadOS-lightgrey" alt="Platform">
+    <img src="https://img.shields.io/badge/Platform-iOS%20%7C%20Android-orange" alt="Platform">
     <img src="https://img.shields.io/badge/iOS-17.0%2B-blue" alt="iOS Version">
-    <img src="https://img.shields.io/badge/Swift-5.9-orange" alt="Swift Version">
+    <img src="https://img.shields.io/badge/Android-APK-green" alt="Android Support">
     <img src="https://img.shields.io/badge/License-Proprietary-red" alt="License">
 </p>
 
 <p>
-    <a href="#">
+    <a href="https://apps.apple.com/us/app/aerolog-mx/id6755896309">
         <img src="https://img.shields.io/badge/Download_on_the-App_Store-black?style=for-the-badge&logo=apple&logoColor=white" alt="Download on App Store">
     </a>
     &nbsp;&nbsp;
-    <a href="https://testflight.apple.com/join/xTP5u5uw">
-        <img src="https://img.shields.io/badge/Join_Beta-TestFlight-0064FA?style=for-the-badge&logo=testflight&logoColor=white" alt="Join TestFlight Beta">
+    <a href="https://download1583.mediafire.com/ur33njtfr77gC5iSGDOaQscgthZTO5gC3nBYMJwX0eDndxhN9RSrvVGqDE-eyGye4n8EPPePId3eNvWzd9h1RL99VWhntjihWq1naeJjL4I-RfszmwHG88Rmc1zCMGIM3vjmdUNKjorslfd4afTbdr1tcVpBdyiVHV7Bb7jRMZAE/kr49frdc1srlyhy/AeroLogMX.apk">
+        <img src="https://img.shields.io/badge/Download-Android_APK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Download Android APK">
     </a>
 </p>
 
@@ -33,16 +33,17 @@
 
 **AeroLog** is a professional utility application re-engineered for the modern hangar floor. It streamlines the process of logging inventory, tracking parts, and documenting maintenance actions without the clutter of legacy systems.
 
-Built natively for Apple platforms, AeroLog moves beyond simple data entry. It integrates **On-Device Computer Vision** to instantly capture part data and **CloudKit** for enterprise-grade synchronization that respects user privacy.
+Built natively for both iOS and Android, AeroLog moves beyond simple data entry. It integrates **On-Device Computer Vision** to instantly capture part data and ensures high-speed performance even in environments with zero connectivity.
 
 ## ✨ Key Features
 
 | Feature | Description |
 | :--- | :--- |
-| **🔍 Intelligent Scanner** | Powered by the **Apple Vision Framework**, the scanner instantly extracts Part Numbers (PN) from messy tags using OCR. |
-| **☁️ Zero-Knowledge Sync** | Built on **CloudKit**. Your data lives in your personal iCloud Private Database. We cannot see it. |
+| **🔍 Intelligent Scanner** | Powered by native Vision frameworks, the scanner instantly extracts Part Numbers (PN) from messy tags using OCR. |
+| **☁️ Zero-Knowledge Sync** | **(iOS Only)** Built on **CloudKit**. Your data lives in your personal iCloud Private Database. |
+| **💾 Import/Export** | **(Android Exclusive)** Full database control. Export your logs to a file or import backups to keep your data portable. |
 | **📸 Visual Evidence** | Attach high-resolution photos of tags and parts directly to your log entries for full accountability. |
-| **⚡️ Offline Capable** | Powered by **SwiftData**, AeroLog works flawlessly in hangars with no Wi-Fi. Data syncs automatically when you reconnect. |
+| **⚡️ Offline Capable** | AeroLog works flawlessly in hangars with no Wi-Fi. Data is stored locally and stays accessible. |
 | **🛡 Ad-Free & Private** | No tracking. No analytics. No ads. Just a professional tool for professionals. |
 
 ---
@@ -52,31 +53,37 @@ Built natively for Apple platforms, AeroLog moves beyond simple data entry. It i
 AeroLog utilizes a **Zero-Knowledge Architecture**. We believe your maintenance logs are your property.
 
 - **No Developer Access:** We do not operate a backend server. We physically cannot access your logs.
-- **Private Cloud:** All synchronization occurs via your Apple ID's private iCloud container.
-- **Local First:** All processing (OCR, Image storage) happens on-device.
-
-> [📄 Read our full Privacy Policy & Terms of Use](https://edualexxis.github.io/AeroLog-MX/)
+- **Private Data:** On iOS, synchronization occurs via your private iCloud container. On Android, your data remains local until you choose to export it.
+- **Local Processing:** All processing (OCR, Image storage) happens on-device.
 
 ---
 
 ## 🛠 Tech Stack
 
-AeroLog is built using the latest 2024/2025 Apple technologies to ensure longevity and performance.
+AeroLog is built using modern technologies to ensure longevity and performance across platforms.
 
-- **Language:** Swift 5.9+
-- **UI Framework:** SwiftUI
-- **Local Persistence:** SwiftData
-- **Cloud Sync:** CloudKit (`NSPersistentCloudKitContainer`)
-- **Computer Vision:** Vision Framework (`VNRecognizeTextRequest`)
-- **Concurrency:** Swift Concurrency (`async`/`await`)
+- **iOS/iPadOS:** SwiftUI, SwiftData, CloudKit, Vision Framework.
+- **Android:** Native development with local SQLite/Room architecture for high-speed offline logging.
+- **OCR:** Native on-device Optical Character Recognition.
 
 ---
 
 ## 📱 Requirements
 
-* **iPhone:** Requires iOS 17.0 or later.
-* **iPad:** Requires iPadOS 17.0 or later.
-* **iCloud:** Required for cross-device sync (optional for local-only use).
+* **iPhone/iPad:** Requires iOS/iPadOS 17.0 or later.
+* **Android:** Compatible with modern Android devices (Direct APK installation).
+* **iCloud:** Required for iOS cross-device sync (optional for local-only use).
+
+---
+
+## 📲 How to Install (Android)
+
+Since AeroLog for Android is currently distributed via APK:
+
+1. **Download** the APK file using the button above.
+2. **Open** the file on your device.
+3. If prompted, go to **Settings** and enable **"Allow from this source"** for your browser or file manager.
+4. Tap **Install** and launch AeroLog.
 
 ---
 
