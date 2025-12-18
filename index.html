@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms & Privacy | AeroLog</title>
+
+    <script>
+        /*
+            (function () {
+                const urlParams = new URLSearchParams(window.location.search);
+                // If 'view=legal' is in the URL, DO NOT redirect.
+                const isLegalView = urlParams.get('view') === 'legal' || urlParams.get('view') === 'app';
     
- <script>
-    (function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        // If 'view=legal' is in the URL, DO NOT redirect.
-        const isLegalView = urlParams.get('view') === 'legal' || urlParams.get('view') === 'app';
-        
-        if (window.location.hostname === "aerolog-mx.online" && 
-           (window.location.pathname === "/" || window.location.pathname === "/index.html") &&
-           !isLegalView) {
-            window.location.href = "home.html";
-        }
-    })();
+                if (window.location.hostname === "aerolog-mx.online" &&
+                    (window.location.pathname === "/" || window.location.pathname === "/index.html") &&
+                    !isLegalView) {
+                    window.location.href = "home.html";
+                }
+            })();
+        */
     </script>
 
     <link rel="icon" type="image/png" href="icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style> body { font-family: 'Inter', sans-serif; } html { scroll-behavior: smooth; } </style>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-600 antialiased selection:bg-slate-200 selection:text-slate-900 flex flex-col min-h-screen">
+
+<body
+    class="bg-slate-50 text-slate-600 antialiased selection:bg-slate-200 selection:text-slate-900 flex flex-col min-h-screen">
 
     <nav class="w-full bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
-    <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
-        <a href="home.html" class="flex items-center gap-3 group">
-            <img src="icon.png" alt="Logo" class="w-8 h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform">
-            <span class="font-bold text-slate-900 tracking-tight text-lg">AeroLog</span>
-        </a>
-        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-500">
-            <a href="home.html" class="hover:text-slate-900 transition-colors">Home</a>
-            <a href="changelog.html" class="text-orange-600 font-semibold bg-orange-50 px-3 py-1 rounded-full">Changelogs</a>
-            <a href="support.html" class="hover:text-slate-900 transition-colors">Support</a>
-            <a href="index.html?view=legal" class="hover:text-slate-900 transition-colors">Legal</a>
+        <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="home.html" class="flex items-center gap-3 group">
+                <img src="icon.png" alt="Logo"
+                    class="w-8 h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform">
+                <span class="font-bold text-slate-900 tracking-tight text-lg">AeroLog</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-500">
+                <a href="home.html" class="hover:text-slate-900 transition-colors">Home</a>
+                <a href="changelog.html" class="hover:text-slate-900 transition-colors">Changelogs</a>
+                <a href="support.html" class="hover:text-slate-900 transition-colors">Support</a>
+                <a href="index.html?view=legal"
+                    class="text-orange-600 font-semibold bg-orange-50 px-3 py-1 rounded-full">Legal</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-500 hover:text-slate-900 p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
         </div>
-        <button id="mobile-menu-btn" class="md:hidden text-slate-500 hover:text-slate-900 p-2 focus:outline-none">
-            <i class="fa-solid fa-bars text-xl"></i>
-        </button>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4 shadow-xl absolute w-full top-16 left-0">
-        <a href="home.html" class="block text-slate-500 font-medium hover:text-orange-600">Home</a>
-        <a href="changelog.html" class="block text-orange-600 font-bold bg-orange-50 px-4 py-2 rounded-lg">Changelogs</a>
-        <a href="support.html" class="block text-slate-500 font-medium hover:text-orange-600">Support</a>
-        <a href="index.html?view=legal" class="block text-slate-500 font-medium hover:text-orange-600">Legal</a>
-    </div>
-</nav>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4 shadow-xl absolute w-full top-16 left-0">
+            <a href="home.html" class="block text-slate-500 font-medium hover:text-orange-600">Home</a>
+            <a href="changelog.html" class="block text-slate-500 font-medium hover:text-orange-600">Changelogs</a>
+            <a href="support.html" class="block text-slate-500 font-medium hover:text-orange-600">Support</a>
+            <a href="index.html?view=legal"
+                class="block text-orange-600 font-bold bg-orange-50 px-4 py-2 rounded-lg">Legal</a>
+        </div>
+    </nav>
 
     <header class="max-w-3xl mx-auto px-6 pb-12 pt-12 text-center">
         <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-4">Terms of Use & Privacy Policy</h1>
@@ -58,7 +75,7 @@
 
     <main class="max-w-3xl mx-auto px-6 pb-24 flex-grow">
         <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 sm:p-12 space-y-16">
-            
+
             <div class="space-y-12">
                 <div class="border-b border-slate-100 pb-8">
                     <h2 class="text-2xl font-bold text-slate-900">Part I: Privacy Policy</h2>
@@ -66,27 +83,41 @@
                 </div>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">1. Introduction</h3>
-                    <p class="leading-relaxed"><strong>AeroLog</strong> ("we," "our," or "the App") is a digital maintenance logbook application developed by <strong>Eduardo Flamenco</strong>. We utilize a "zero-knowledge" architecture: we do not collect, store, or mine your personal data on our own servers.</p>
+                    <p class="leading-relaxed"><strong>AeroLog</strong> ("we," "our," or "the App") is a digital
+                        maintenance logbook application developed by <strong>Eduardo Flamenco</strong>. We utilize a
+                        "zero-knowledge" architecture: we do not collect, store, or mine your personal data on our own
+                        servers.</p>
                 </section>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">2. Data Storage & Platform Differences</h3>
-                    <p class="leading-relaxed mb-4">AeroLog stores data locally on your device, with platform-specific sync options:</p>
+                    <p class="leading-relaxed mb-4">AeroLog stores data locally on your device, with platform-specific
+                        sync options:</p>
                     <ul class="list-disc pl-5 space-y-2 marker:text-slate-300">
-                        <li><strong>iOS/iPadOS:</strong> Data is stored using SwiftData. If enabled, data syncs to your personal, encrypted <strong>iCloud</strong> container. We have no access to this container.</li>
-                        <li><strong>Android:</strong> Data is stored locally in an encrypted database. There is no automatic cloud synchronization. Data remains on the device unless manually exported by the user.</li>
+                        <li><strong>iOS/iPadOS:</strong> Data is stored using SwiftData. If enabled, data syncs to your
+                            personal, encrypted <strong>iCloud</strong> container. We have no access to this container.
+                        </li>
+                        <li><strong>Android:</strong> Data is stored locally in an encrypted database. There is no
+                            automatic cloud synchronization. Data remains on the device unless manually exported by the
+                            user.</li>
                     </ul>
                 </section>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">3. Camera Usage</h3>
-                    <p class="leading-relaxed">We use the camera for the <strong>Intelligent Scanner</strong> (OCR) and for attaching photos to parts. All image processing happens locally on your device. No video or images are sent to external servers for analysis.</p>
+                    <p class="leading-relaxed">We use the camera for the <strong>Intelligent Scanner</strong> (OCR) and
+                        for attaching photos to parts. All image processing happens locally on your device. No video or
+                        images are sent to external servers for analysis.</p>
                 </section>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">4. Analytics & Tracking</h3>
-                    <p class="leading-relaxed">We do not use third-party analytics (like Google Analytics) and we do not display ads. We respect your "Do Not Track" settings.</p>
+                    <p class="leading-relaxed">We do not use third-party analytics (like Google Analytics) and we do not
+                        display ads. We respect your "Do Not Track" settings.</p>
                 </section>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">5. Data Portability (Import/Export)</h3>
-                    <p class="leading-relaxed">The <strong>Import/Export</strong> feature allows you to create manual backups of your database. These files are stored in your device's file system or a location of your choosing. You are solely responsible for the security and storage of these exported files.</p>
+                    <p class="leading-relaxed">The <strong>Import/Export</strong> feature allows you to create manual
+                        backups of your database. These files are stored in your device's file system or a location of
+                        your choosing. You are solely responsible for the security and storage of these exported files.
+                    </p>
                 </section>
             </div>
 
@@ -97,32 +128,49 @@
                 </div>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">1. Agreement to Terms</h3>
-                    <p class="leading-relaxed">By downloading or using AeroLog, you agree to these Terms. If you do not agree, you may not use the App.</p>
+                    <p class="leading-relaxed">By downloading or using AeroLog, you agree to these Terms. If you do not
+                        agree, you may not use the App.</p>
                 </section>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">2. Use License</h3>
-                    <p class="leading-relaxed mb-3">We grant you a personal, non-exclusive, non-transferable license to use AeroLog for your personal or professional maintenance logging purposes.</p>
-                    <p class="leading-relaxed text-sm text-slate-500">You may not reverse engineer, decompile, or attempt to extract the source code of the App.</p>
+                    <p class="leading-relaxed mb-3">We grant you a personal, non-exclusive, non-transferable license to
+                        use AeroLog for your personal or professional maintenance logging purposes.</p>
+                    <p class="leading-relaxed text-sm text-slate-500">You may not reverse engineer, decompile, or
+                        attempt to extract the source code of the App.</p>
                 </section>
                 <section class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-lg">
-                    <h3 class="text-amber-900 font-bold text-sm uppercase tracking-wide mb-2">3. Important Aviation Disclaimer</h3>
-                    <p class="text-amber-800 text-sm leading-relaxed"><strong>AeroLog is a supplementary utility tool.</strong> Unless explicitly certified by your local aviation authority (e.g., FAA, EASA), this App does <strong>not</strong> replace official, legal maintenance logs or airworthiness records.<br><br>You are solely responsible for ensuring that your maintenance records comply with all applicable regulations. The Developer assumes no liability for the accuracy or legal validity of the data you maintain within the App.</p>
+                    <h3 class="text-amber-900 font-bold text-sm uppercase tracking-wide mb-2">3. Important Aviation
+                        Disclaimer</h3>
+                    <p class="text-amber-800 text-sm leading-relaxed"><strong>AeroLog is a supplementary utility
+                            tool.</strong> Unless explicitly certified by your local aviation authority (e.g., FAA,
+                        EASA), this App does <strong>not</strong> replace official, legal maintenance logs or
+                        airworthiness records.<br><br>You are solely responsible for ensuring that your maintenance
+                        records comply with all applicable regulations. The Developer assumes no liability for the
+                        accuracy or legal validity of the data you maintain within the App.</p>
                 </section>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">4. Responsibility for Data</h3>
-                    <p class="leading-relaxed">On Android, there is no automatic cloud backup. <strong>You are responsible for manually exporting and backing up your data.</strong> The Developer is not responsible for data loss resulting from device failure, app deletion, or forgotten passwords.</p>
+                    <p class="leading-relaxed">On Android, there is no automatic cloud backup. <strong>You are
+                            responsible for manually exporting and backing up your data.</strong> The Developer is not
+                        responsible for data loss resulting from device failure, app deletion, or forgotten passwords.
+                    </p>
                 </section>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">5. Disclaimer of Warranties</h3>
-                    <p class="leading-relaxed">The App is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties regarding the reliability, stability, or availability of the App or any synchronization services.</p>
+                    <p class="leading-relaxed">The App is provided on an "AS IS" and "AS AVAILABLE" basis. We make no
+                        warranties regarding the reliability, stability, or availability of the App or any
+                        synchronization services.</p>
                 </section>
                 <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">6. Limitation of Liability</h3>
-                    <p class="leading-relaxed">In no event shall the Developer be liable for any damages (including, without limitation, damages for loss of data or profit) arising out of the use or inability to use the App.</p>
+                    <p class="leading-relaxed">In no event shall the Developer be liable for any damages (including,
+                        without limitation, damages for loss of data or profit) arising out of the use or inability to
+                        use the App.</p>
                 </section>
-                 <section>
+                <section>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">7. Governing Law</h3>
-                    <p class="leading-relaxed">These terms shall be governed by and construed in accordance with the laws of the United States.</p>
+                    <p class="leading-relaxed">These terms shall be governed by and construed in accordance with the
+                        laws of the United States.</p>
                 </section>
             </div>
         </div>
@@ -140,4 +188,5 @@
         });
     </script>
 </body>
+
 </html>
