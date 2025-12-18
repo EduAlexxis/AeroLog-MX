@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms & Privacy | AeroLog</title>
     
-  <script>
-  // Get URL parameters
-  const urlParams = new URLSearchParams(window.location.search);
-  
-  // Only redirect if:
-  // 1. We are on the new domain
-  // 2. We are at the root or index.html
-  // 3. The URL DOES NOT have '?view=legal'
-  if (window.location.hostname === "aerolog-mx.online" && 
-     (window.location.pathname === "/" || window.location.pathname === "/index.html") &&
-     urlParams.get('view') !== 'legal') {
-      window.location.href = "home.html";
-  }
-</script>
+ <script>
+    (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        // If 'view=legal' is in the URL, DO NOT redirect.
+        const isLegalView = urlParams.get('view') === 'legal' || urlParams.get('view') === 'app';
+        
+        if (window.location.hostname === "aerolog-mx.online" && 
+           (window.location.pathname === "/" || window.location.pathname === "/index.html") &&
+           !isLegalView) {
+            window.location.href = "home.html";
+        }
+    })();
+    </script>
 
     <link rel="icon" type="image/png" href="icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
