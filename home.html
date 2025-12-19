@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,57 +9,68 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style> body { font-family: 'Inter', sans-serif; } </style>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
+
 <body class="bg-slate-50 text-slate-600 antialiased flex flex-col min-h-screen">
 
-   <nav class="w-full bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
-    <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
-        <a href="home.html" class="flex items-center gap-3 group">
-            <img src="icon.png" alt="Logo" class="w-8 h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform">
-            <span class="font-bold text-slate-900 tracking-tight text-lg">AeroLog</span>
-        </a>
-        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-500">
-            <a href="home.html" class="text-orange-600 font-semibold bg-orange-50 px-3 py-1 rounded-full">Home</a>
-            <a href="changelog.html" class="hover:text-slate-900 transition-colors">Changelogs</a>
-            <a href="support.html" class="hover:text-slate-900 transition-colors">Support</a>
-            <a href="index.html?view=legal" class="hover:text-slate-900 transition-colors">Legal</a>
+    <nav class="w-full bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="home.html" class="flex items-center gap-3 group">
+                <img src="icon.png" alt="Logo"
+                    class="w-8 h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform">
+                <span class="font-bold text-slate-900 tracking-tight text-lg">AeroLog</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-500">
+                <a href="home.html" class="text-orange-600 font-semibold bg-orange-50 px-3 py-1 rounded-full">Home</a>
+                <a href="changelog.html" class="hover:text-slate-900 transition-colors">Changelogs</a>
+                <a href="support.html" class="hover:text-slate-900 transition-colors">Support</a>
+                <a href="index.html?view=legal" class="hover:text-slate-900 transition-colors">Legal</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-500 hover:text-slate-900 p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
         </div>
-        <button id="mobile-menu-btn" class="md:hidden text-slate-500 hover:text-slate-900 p-2 focus:outline-none">
-            <i class="fa-solid fa-bars text-xl"></i>
-        </button>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4 shadow-xl absolute w-full top-16 left-0">
-        <a href="home.html" class="block text-orange-600 font-bold bg-orange-50 px-4 py-2 rounded-lg">Home</a>
-        <a href="changelog.html" class="block text-slate-500 font-medium hover:text-orange-600">Changelogs</a>
-        <a href="support.html" class="block text-slate-500 font-medium hover:text-orange-600">Support</a>
-        <a href="index.html?view=legal" class="block text-slate-500 font-medium hover:text-orange-600">Legal</a>
-    </div>
-</nav>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4 shadow-xl absolute w-full top-16 left-0">
+            <a href="home.html" class="block text-orange-600 font-bold bg-orange-50 px-4 py-2 rounded-lg">Home</a>
+            <a href="changelog.html" class="block text-slate-500 font-medium hover:text-orange-600">Changelogs</a>
+            <a href="support.html" class="block text-slate-500 font-medium hover:text-orange-600">Support</a>
+            <a href="index.html?view=legal" class="block text-slate-500 font-medium hover:text-orange-600">Legal</a>
+        </div>
+    </nav>
 
     <main class="flex-grow">
         <section class="max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-8 border border-blue-100">
-                <span class="w-2 h-2 rounded-full bg-blue-500"></span> v1.1 Available Now
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-8 border border-blue-100">
+                <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span> v1.1 Available Now
             </div>
-            
+
             <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
-                The Intelligent Logbook for <br class="hidden sm:block"> <span class="text-orange-500">Aviation Professionals</span>
+                The Intelligent Logbook for <br class="hidden sm:block"> <span class="text-orange-500">Aviation
+                    Professionals</span>
             </h1>
             <p class="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Seamlessly scan parts, sync across devices, and maintain audit-ready logs with a tool built for the hangar floor.
+                Seamlessly scan parts, sync across devices, and maintain audit-ready logs with a tool built for the
+                hangar floor.
             </p>
-            
+
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://apps.apple.com/us/app/aerolog-mx/id6755896309" target="_blank" class="inline-flex items-center justify-center bg-slate-900 text-white px-8 py-3 rounded-xl font-semibold hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200">
-                    <i class="fa-brands fa-apple mr-2 text-xl"></i> 
+                <a href="https://apps.apple.com/us/app/aerolog-mx/id6755896309" target="_blank"
+                    class="inline-flex items-center justify-center bg-slate-900 text-white px-8 py-3 rounded-xl font-semibold hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200">
+                    <i class="fa-brands fa-apple mr-2 text-xl"></i>
                     <div class="text-left">
                         <p class="text-[10px] uppercase leading-none opacity-70">Download on the</p>
                         <p class="text-base leading-tight">App Store</p>
                     </div>
                 </a>
-                
-                <a href="https://www.mediafire.com/file/9qpu0bfd80jxpnw/AeroLogMX.apk/file" class="inline-flex items-center justify-center bg-white border border-slate-200 text-slate-900 px-8 py-3 rounded-xl font-semibold hover:bg-slate-50 transition-colors shadow-sm">
+                <a href="https://download1583.mediafire.com/ur33njtfr77gC5iSGDOaQscgthZTO5gC3nBYMJwX0eDndxhN9RSrvVGqDE-eyGye4n8EPPePId3eNvWzd9h1RL99VWhntjihWq1naeJjL4I-RfszmwHG88Rmc1zCMGIM3vjmdUNKjorslfd4afTbdr1tcVpBdyiVHV7Bb7jRMZAE/kr49frdc1srlyhy/AeroLogMX.apk"
+                    class="inline-flex items-center justify-center bg-white border border-slate-200 text-slate-900 px-8 py-3 rounded-xl font-semibold hover:bg-slate-50 transition-colors shadow-sm">
                     <i class="fa-brands fa-android mr-2 text-xl text-green-600"></i>
                     <div class="text-left">
                         <p class="text-[10px] uppercase leading-none opacity-70">Direct Install</p>
@@ -75,21 +87,24 @@
                         <i class="fa-solid fa-expand text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900">Smart Scanner</h3>
-                    <p class="text-slate-500 leading-relaxed">Instantly capture Part Numbers using on-device OCR. Just point your camera at the tag.</p>
+                    <p class="text-slate-500 leading-relaxed">Instantly capture Part Numbers using on-device OCR. Just
+                        point your camera at the tag.</p>
                 </div>
                 <div class="space-y-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
                         <i class="fa-solid fa-cloud-arrow-up text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900">iCloud Sync</h3>
-                    <p class="text-slate-500 leading-relaxed">Your data lives on your devices. Syncs seamlessly between iPhone and iPad via your private iCloud.</p>
+                    <p class="text-slate-500 leading-relaxed">Your data lives on your devices. Syncs seamlessly between
+                        iPhone and iPad via your private iCloud.</p>
                 </div>
                 <div class="space-y-4">
                     <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600">
                         <i class="fa-solid fa-camera text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900">Visual Evidence</h3>
-                    <p class="text-slate-500 leading-relaxed">Attach photos of parts and tags directly to your log entries for complete accountability.</p>
+                    <p class="text-slate-500 leading-relaxed">Attach photos of parts and tags directly to your log
+                        entries for complete accountability.</p>
                 </div>
             </div>
         </section>
@@ -104,4 +119,5 @@
         btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
     </script>
 </body>
+
 </html>
