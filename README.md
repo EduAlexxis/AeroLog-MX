@@ -18,7 +18,7 @@
         <img src="https://img.shields.io/badge/Download_on_the-App_Store-black?style=for-the-badge&logo=apple&logoColor=white" alt="Download on App Store">
     </a>
     &nbsp;&nbsp;
-    <a href="https://download1583.mediafire.com/ur33njtfr77gC5iSGDOaQscgthZTO5gC3nBYMJwX0eDndxhN9RSrvVGqDE-eyGye4n8EPPePId3eNvWzd9h1RL99VWhntjihWq1naeJjL4I-RfszmwHG88Rmc1zCMGIM3vjmdUNKjorslfd4afTbdr1tcVpBdyiVHV7Bb7jRMZAE/kr49frdc1srlyhy/AeroLogMX.apk">
+    <a href="https://www.mediafire.com/file/9qpu0bfd80jxpnw/AeroLogMX.apk/file">
         <img src="https://img.shields.io/badge/Download-Android_APK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Download Android APK">
     </a>
 </p>
