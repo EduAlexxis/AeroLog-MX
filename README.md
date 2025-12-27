@@ -18,7 +18,7 @@
         <img src="https://img.shields.io/badge/Download_on_the-App_Store-black?style=for-the-badge&logo=apple&logoColor=white" alt="Download on App Store">
     </a>
     &nbsp;&nbsp;
-    <a href="https://www.mediafire.com/file/9qpu0bfd80jxpnw/AeroLogMX.apk/file">
+    <a href="https://www.mediafire.com/file/ws2clhseppt5qup/AeroLogMX.apk/file">
         <img src="https://img.shields.io/badge/Download-Android_APK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Download Android APK">
     </a>
 </p>
